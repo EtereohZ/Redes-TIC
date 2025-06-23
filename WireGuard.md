@@ -1,4 +1,6 @@
+WireGuard es una VPN liviana, y de fácil configuración, que permite encapsular y encriptar paquetes IP sobre UDP. Encripta la información a nivel L3.
 
+Podemos utilizar WG en conjunto con protocolos GRE o EoIP para, primero, crear un túnel entre sitios (usando GRE o EoIP) que permitan *multicast* y, segundo, poder encriptar la información que viaja por ese túnel (Usando WG).
 
 ## Configuración en Winbox
 
@@ -20,6 +22,7 @@ Ahora debemos realizar estos mismos pasos en el otro equipo que formará parte d
 Ahora pegamos las claves públicas de cada equipo en la pestaña de "peers" del otro.
 
 Recordar que para que el túnel funcione, debemos tener una ruta hacia nuestro *peer*.
+También recordar crear reglas en el FW para permitir el tráfico.
 
 
 [Más info](https://help.mikrotik.com/docs/spaces/ROS/pages/69664792/WireGuard)
